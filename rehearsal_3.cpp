@@ -1,6 +1,24 @@
 #include <iostream>
+#include <cmath>
+using namespace std;
 
-//Write sumSqrt() here.
+float sumSqrt(int N)
+{
+    float sum=0;
+    int i=1;
+
+    if(N>0)
+    {
+        while(i<=N)
+        {
+        sum=sum+(1/sqrt(i));
+        i++;
+        }
+    }
+    
+    return sum;
+    
+}
 
 
 int main()
